@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        .attribution { font-size: 11px; text-align: center; }
+        .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="dashboard-container">
+            <div class="profile">
+                <div class="profile-data">
+                    <img src="./images/image-jeremy.png" alt="image-jeremy">
+                    <div class="text">
+                        <p class="report">Report for </p>
+                        <p class="name"> Jeremy Robson</p>
+                    </div>
+                    
+                </div>
+                <div class="list">
+                    <ul class="ul-list">
+                        <li onclick="changeToDaily()" id="daily">Daily</li>
+                        <li onclick="changeToWeekly()" id="weekly">Weekly</li>
+                        <li onclick="changeToMonthly()" id="monthly">Monthly</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work">
+                <div class="content" id="content">
+                    <div class="top-bar-content">
+                        <p>Work</p>
+                        <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+                    </div>
+                    
+                    <p class="work-hours"></p>
+                    <p class="work-previous-hours"></p>
+                </div>
+                
+                <img src="./images/icon-work.svg" alt="icon-work">
+            </div>
+            <div class="play">
+                <div class="content">
+                    <div class="top-bar-content">
+                        <p>Play</p>
+                        <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+                    </div>
+                    <p class="play-hours"></p>
+                    <p class="play-previous-hours"></p>
+                </div>
+                <img src="./images/icon-play.svg" alt="icon-play">
+            </div>
+            <div class="study">
+                <div class="content">
+                    <div class="top-bar-content">
+                        <p>Study</p>
+                        <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+                    </div>
+
+                    <p class="study-hours"></p>
+                    <p class="study-previous-hours"></p>
+                </div>
+                <img src="./images/icon-study.svg" alt="icon-study">
+            </div>
+            <div class="exercise">
+                <div class="content">
+                    <div class="top-bar-content">
+                        <p>Exercise</p>
+                        <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+                    </div>
+
+                    <p class="exercise-hours"></p>
+                    <p class="exercise-previous-hours"></p>
+                </div>
+                <img src="./images/icon-exercise.svg" alt="icon-exercise">
+            </div>
+            <div class="social">
+                <div class="content">
+                    <div class="top-bar-content">
+                        <p>Social</p>
+                        <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+                    </div>
+
+                    <p class="social-hours"></p>
+                    <p class="social-previous-hours"></p>
+                </div>
+                <img src="./images/icon-social.svg" alt="icon-social">
+            </div>
+            <div class="self-care">
+                <div class="content">
+                    <div class="top-bar-content">
+                        <p>Self Care</p>
+                        <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+                    </div>
+
+                    <p class="self-care-hours"></p>
+                    <p class="self-care-previous-hours"></p>
+                </div>
+                <img src="./images/icon-self-care.svg" alt="icon-self-care">
+            </div>
+        </div>
+    </div>
+   
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/andreasci">Andrea Sciarra</a>.
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
