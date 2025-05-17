@@ -10,7 +10,7 @@ function changeToDaily(){
     document.getElementById("weekly").classList.remove("active");
 
     if (window.matchMedia('(min-width: 769px)').matches){
-        rotateContentModified();
+        //rotateContentModified();
     }
 
     document.querySelector(".work-hours").textContent="5hrs";
@@ -42,7 +42,7 @@ function changeToWeekly(){
 
 
     if (window.matchMedia('(min-width: 769px)').matches){
-        rotateContentModified();
+        //rotateContentModified();
     }
 
     document.querySelector(".work-hours").textContent="32hrs";
@@ -73,7 +73,7 @@ function changeToMonthly(){
 
 
     if (window.matchMedia('(min-width: 769px)').matches){
-        rotateContentModified();
+        //rotateContentModified();
     }
 
     document.querySelector(".work-hours").textContent="103hrs";
